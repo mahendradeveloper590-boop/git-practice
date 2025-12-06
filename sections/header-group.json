@@ -1,0 +1,55 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "header",
+  "name": "Header group",
+  "sections": {
+    "announcement-bar": {
+      "type": "announcement-bar",
+      "settings": {
+        "background": "#efe20d",
+        "text_color": "#000000",
+        "text": "STAY WARM DURING WINTER. NEW YEAR, NEW GEAR!!",
+        "text_position": "center",
+        "link": "shopify://collections/insulated-garments",
+        "show_newsletter": false,
+        "newsletter_button": "Subscribe & Save",
+        "newsletter_title": "Newsletter",
+        "newsletter_content": "<p>A short sentence describing what someone will receive by subscribing</p>"
+      }
+    },
+    "header": {
+      "type": "header",
+      "settings": {
+        "enable_sticky_header": false,
+        "logo": "shopify://shop_images/ASIhiresLogo_86b05660-966c-4a09-a70a-656575221c1f_225x150_1_1.png",
+        "logo_max_width": 100,
+        "mobile_logo_max_width": 80,
+        "show_locale_selector": true,
+        "show_country_selector": true,
+        "navigation_menu": "navigation",
+        "navigation_mobile_menu": "",
+        "desktop_navigation_layout": "inline",
+        "desktop_navigation_open_trigger": "hover",
+        "show_navigation_social_media": true,
+        "navigation_phone_number": "305-698-7233",
+        "navigation_email": "sales@asisafety.com",
+        "show_condensed_search": true,
+        "show_search_filter": true,
+        "search_menu": "",
+        "show_search_menu_title": false
+      }
+    }
+  },
+  "order": [
+    "announcement-bar",
+    "header"
+  ]
+}

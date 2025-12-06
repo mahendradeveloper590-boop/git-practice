@@ -1,0 +1,438 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "slideshow": {
+      "type": "slideshow",
+      "blocks": {
+        "slide-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/banner.png",
+            "show_overlay": false,
+            "overlay_opacity": 0,
+            "text_color": "#ffffff",
+            "title": "Top-Quality Gear for a Safer Workday",
+            "content": "Your Safety, Our Priority",
+            "content_position": "middle_center",
+            "button_background": "#f26a12",
+            "button_text_color": "#ffffff",
+            "button_text": "Shop Now",
+            "link": "shopify://collections"
+          }
+        }
+      },
+      "block_order": [
+        "slide-1"
+      ],
+      "custom_css": [
+        "h2.slideshow__title.heading.h1 {text-align: center; font-size: 22px; color: #f26a12; font-weight: 600;}",
+        "p.slideshow__content {text-align: center; font-size: 35px; font-weight: 600; text-transform: uppercase; margin-top: -15px;}",
+        ".slideshow__content-wrapper {max-width: 50%; margin-left: -267px;}",
+        "@media screen and (max-width: 767px) {.slideshow__content-wrapper {max-width: none; margin-left: auto; } h2.slideshow__title.heading.h1 {text-align: center; font-size: 18px; color: #f26a12; font-weight: 600; }}"
+      ],
+      "settings": {
+        "edge_to_edge": true,
+        "section_size": "preserve_ratio",
+        "carousel_effect": "slide",
+        "autoplay": true,
+        "cycle_speed": 5
+      }
+    },
+    "promotion_list_xwtLPK": {
+      "type": "promotion-list",
+      "blocks": {
+        "item_J4RjeM": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/138-25631.jpg",
+            "show_overlay": true,
+            "overlay_opacity": 38,
+            "stretch_image": false,
+            "background": "#ffffff",
+            "text_color": "#000000",
+            "title": "Eye Protection",
+            "content": "<p>Stylish and comfortable with a retro design</p>",
+            "content_position": "middle_left",
+            "button_background": "rgba(0,0,0,0)",
+            "button_text_color": "#000000",
+            "button_text": "Shop Now",
+            "button_link": "shopify://collections/eye-protection"
+          }
+        },
+        "item_7aFQiN": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/HL_max_3301161_20hl_20max.jpg",
+            "show_overlay": true,
+            "overlay_opacity": 38,
+            "stretch_image": false,
+            "background": "#ffffff",
+            "text_color": "#000000",
+            "title": "Hearing Protection",
+            "content": "<p>Optimal comfort and efficiency</p>",
+            "content_position": "middle_left",
+            "button_background": "#e1e1e1",
+            "button_text_color": "#000000",
+            "button_text": "Shop Now",
+            "button_link": "shopify://collections/hearing-protection"
+          }
+        },
+        "item_VVpnba": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/412-54420.jpg",
+            "show_overlay": true,
+            "overlay_opacity": 50,
+            "stretch_image": false,
+            "background": "#ffffff",
+            "text_color": "#000000",
+            "title": "Hand Gloves",
+            "content": "<p>Designed for reliable protection and comfort</p>",
+            "content_position": "middle_left",
+            "button_background": "#e1e1e1",
+            "button_text_color": "#000000",
+            "button_text": "Shop Now",
+            "button_link": "shopify://collections/disposable-gloves"
+          }
+        },
+        "item_UgTAVd": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/0360RNAV_F__79079.jpg",
+            "show_overlay": true,
+            "overlay_opacity": 38,
+            "stretch_image": false,
+            "background": "#ffffff",
+            "text_color": "#000000",
+            "title": "Insulated Garments",
+            "content": "<p>Rated for extreme cold</p>",
+            "content_position": "middle_left",
+            "button_background": "#e1e1e1",
+            "button_text_color": "#000000",
+            "button_text": "Shop Now",
+            "button_link": "shopify://collections/insulated-garments"
+          }
+        },
+        "item_krFkNz": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/PW365YBR.jpg",
+            "show_overlay": true,
+            "overlay_opacity": 38,
+            "stretch_image": false,
+            "background": "#ffffff",
+            "text_color": "#000000",
+            "title": "Hi-Viz",
+            "content": "<p>Stay visible and comfortable while on the job</p>",
+            "content_position": "middle_left",
+            "button_background": "#e1e1e1",
+            "button_text_color": "#000000",
+            "button_text": "Shop Now",
+            "button_link": "shopify://collections/hi-viz-jackets"
+          }
+        },
+        "item_c4dqrp": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/3_5.png",
+            "show_overlay": true,
+            "overlay_opacity": 38,
+            "stretch_image": false,
+            "background": "#ffffff",
+            "text_color": "#000000",
+            "title": "Flame Retardant",
+            "content": "<p>Protects against radiant and convective Heat</p>",
+            "content_position": "middle_left",
+            "button_background": "#e1e1e1",
+            "button_text_color": "#000000",
+            "button_text": "Shop Now",
+            "button_link": "shopify://collections/coveralls"
+          }
+        }
+      },
+      "block_order": [
+        "item_J4RjeM",
+        "item_7aFQiN",
+        "item_VVpnba",
+        "item_UgTAVd",
+        "item_krFkNz",
+        "item_c4dqrp"
+      ],
+      "settings": {
+        "heading": "exclusive top collection",
+        "expand_items": false,
+        "section_size": "small",
+        "stack_mobile": false
+      }
+    },
+    "collection_with_image_Y8a98V": {
+      "type": "collection-with-image",
+      "custom_css": [],
+      "settings": {
+        "collection": "insulated-garments",
+        "products_count": 20,
+        "show_quick_buy": false,
+        "image": "shopify://shop_images/Group_196.png",
+        "background": "#ffffff",
+        "text_color": "#ffffff",
+        "title": "What's Hot",
+        "content": "Explore our new range of safety equipment",
+        "button_background": "#f26a12",
+        "button_text_color": "#ffffff",
+        "button_text": "Shop Insulated Garments",
+        "button_link": "shopify://collections/insulated-garments"
+      }
+    },
+    "image_with_text_YDgxtm": {
+      "type": "image-with-text",
+      "settings": {
+        "image": "shopify://shop_images/webimage-C1B9344C-F218-49FB-B433B65459175532_800x533_c1b39754-a244-4c44-9cf6-883f8d8ad2f1.png",
+        "image_position": "right",
+        "image_width": 50,
+        "title": "About us",
+        "content": "<p>We specialize in providing top-quality safety equipment to customers across South Florida, the Caribbean, and Latin America. As master distributors for leading U.S. manufacturers of safety equipment, we serve as a direct link between manufacturers and end-users. ASI has over 25 Years of Experience in the PPE Sector. We understand the critical importance of maintaining a safe workplace. Offering a comprehensive selection of PPE tailored to meet diverse industry needs. Our mission is to prioritize quality and customer service,ensuring our clients receive the best products available.</p>",
+        "button_text": "",
+        "button_link": "shopify://collections/all"
+      }
+    },
+    "image_with_text_gCJ4ep": {
+      "type": "image-with-text",
+      "custom_css": [],
+      "settings": {
+        "image": "shopify://shop_images/front-view-worker-using-iron_1.png",
+        "image_position": "left",
+        "image_width": 50,
+        "title": "High-quality safety equipment",
+        "content": "<p>In industries like construction and manufacturing, worker safety is paramount. Personal protective equipment (PPE) is essential in preventing accidents, injuries, and even fatalities. Implementing the right PPE ensures that laborers are protected from the hazards present in their work environments. We have the best essential personal protective gear for industrial and construction workers, focusing on ensuring safety compliance and minimizing risks.</p>",
+        "button_text": "Shop Now",
+        "button_link": "shopify://products/2028ho-2028ho-duraskin-orange-nitrile-disposable-gloves-orange"
+      }
+    },
+    "featured-collection": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "sales",
+        "title": "Best Sellers",
+        "products_count": 25,
+        "layout": "vertical",
+        "stack_products": false,
+        "show_quick_buy": false,
+        "link_title": "",
+        "link_url": "shopify://collections/sales"
+      }
+    },
+    "slideshow_C8XPAy": {
+      "type": "slideshow",
+      "blocks": {
+        "image_33tzag": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/banner_1.png",
+            "show_overlay": false,
+            "overlay_opacity": 0,
+            "text_color": "#ffffff",
+            "title": "Protecting Industry and Construction Workers",
+            "content": "our Protective Equipment",
+            "content_position": "middle_left",
+            "button_background": "#f26a12",
+            "button_text_color": "#ffffff",
+            "button_text": "Shop Now",
+            "link": "shopify://collections/cool-hard-hats"
+          }
+        }
+      },
+      "block_order": [
+        "image_33tzag"
+      ],
+      "custom_css": [
+        ".slideshow--preserve-ratio .slideshow__content-wrapper {position: absolute; top: 50%; left: 50%; transform: translate(-6%, -50%);}",
+        "h2.slideshow__title.heading.h1 {font-size: 20px; color: #f48740; font-weight: 600;}",
+        "p.slideshow__content {font-size: 37px; text-transform: uppercase; font-weight: 600;}",
+        ".container {padding: 0 var(--mobile-container-gutter); max-width: 1480px; margin-left: auto; margin-right: auto; line-height: 1;}"
+      ],
+      "settings": {
+        "edge_to_edge": true,
+        "section_size": "preserve_ratio",
+        "carousel_effect": "slide",
+        "autoplay": true,
+        "cycle_speed": 5
+      }
+    },
+    "newsletter": {
+      "type": "newsletter",
+      "disabled": true,
+      "settings": {
+        "title": "Newsletter",
+        "content": "<p>A short sentence describing what someone will receive by subscribing</p>",
+        "background": "#1e2d7d",
+        "text": "#ffffff"
+      }
+    },
+    "blog-posts": {
+      "type": "blog-posts",
+      "disabled": true,
+      "settings": {
+        "blog": "",
+        "blog_posts_count": 3,
+        "title": "Blog posts",
+        "link_title": "View all",
+        "show_category": true,
+        "show_author": true,
+        "show_date": true,
+        "show_excerpt": false,
+        "stack_mobile": false
+      }
+    },
+    "custom_slider_zb3XAF": {
+      "type": "custom-slider",
+      "disabled": true,
+      "settings": {
+        "section_heading": "What Our Users Say",
+        "highlight_color": "#ff6600"
+      }
+    },
+    "custom_slider_Jf3fM8": {
+      "type": "custom-slider",
+      "blocks": {
+        "testimonial_cgHaQU": {
+          "type": "testimonial",
+          "settings": {
+            "testimonial_text": "Fast delivery great services. We I will be buying more soon. Thank you.....",
+            "parag": "",
+            "testimonial_image": "shopify://shop_images/Group_101.png",
+            "user_name": "Jon",
+            "testimonial_date": "11/01/24"
+          }
+        },
+        "testimonial_iNbNfC": {
+          "type": "testimonial",
+          "settings": {
+            "testimonial_text": "Delivery is excellent and the prices seem reasonable. Thank you!",
+            "parag": "",
+            "testimonial_image": "shopify://shop_images/Group_15.png",
+            "user_name": "Jim",
+            "testimonial_date": "11/30/24"
+          }
+        },
+        "testimonial_aNDtcH": {
+          "type": "testimonial",
+          "settings": {
+            "testimonial_text": "Thank you for the order. I received it in perfect condition. Thank you again.",
+            "parag": "",
+            "testimonial_image": "shopify://shop_images/Group_100.png",
+            "user_name": "Tom",
+            "testimonial_date": "01/16/25"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_cgHaQU",
+        "testimonial_iNbNfC",
+        "testimonial_aNDtcH"
+      ],
+      "settings": {
+        "section_heading": "What Our Users Say",
+        "highlight_color": "#ff6600"
+      }
+    },
+    "custom_suport_khwHGw": {
+      "type": "custom-suport",
+      "blocks": {
+        "image_slide_PH3hEf": {
+          "type": "image-slide",
+          "settings": {
+            "slide-image": "shopify://shop_images/Vector_5.png",
+            "slide-heading": "Fast shipping",
+            "heading": "",
+            "slide-description": ""
+          }
+        },
+        "image_slide_XhYGgh": {
+          "type": "image-slide",
+          "settings": {
+            "slide-image": "shopify://shop_images/Group_1.png",
+            "slide-heading": "Easy Return",
+            "heading": "",
+            "slide-description": ""
+          }
+        },
+        "image_slide_UKCAaX": {
+          "type": "image-slide",
+          "settings": {
+            "slide-image": "shopify://shop_images/Group.png",
+            "slide-heading": "Secure Payment",
+            "heading": "",
+            "slide-description": ""
+          }
+        },
+        "image_slide_93qyiK": {
+          "type": "image-slide",
+          "settings": {
+            "slide-image": "shopify://shop_images/Vector_4.png",
+            "slide-heading": "Assured Quality",
+            "heading": "",
+            "slide-description": ""
+          }
+        },
+        "image_slide_Nyzi8A": {
+          "type": "image-slide",
+          "settings": {
+            "slide-image": "shopify://shop_images/Vector_2.png",
+            "slide-heading": "Best Price",
+            "heading": "",
+            "slide-description": ""
+          }
+        },
+        "image_slide_Bhat6R": {
+          "type": "image-slide",
+          "settings": {
+            "slide-image": "shopify://shop_images/Group.png",
+            "slide-heading": "Secure Payment",
+            "heading": "",
+            "slide-description": ""
+          }
+        },
+        "image_slide_zK6pfF": {
+          "type": "image-slide",
+          "settings": {
+            "slide-heading": "",
+            "heading": "",
+            "slide-description": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_slide_PH3hEf",
+        "image_slide_XhYGgh",
+        "image_slide_UKCAaX",
+        "image_slide_93qyiK",
+        "image_slide_Nyzi8A",
+        "image_slide_Bhat6R",
+        "image_slide_zK6pfF"
+      ],
+      "settings": {}
+    }
+  },
+  "order": [
+    "slideshow",
+    "promotion_list_xwtLPK",
+    "collection_with_image_Y8a98V",
+    "image_with_text_YDgxtm",
+    "image_with_text_gCJ4ep",
+    "featured-collection",
+    "slideshow_C8XPAy",
+    "newsletter",
+    "blog-posts",
+    "custom_slider_zb3XAF",
+    "custom_slider_Jf3fM8",
+    "custom_suport_khwHGw"
+  ]
+}

@@ -1,0 +1,320 @@
+
+{% schema %}
+{
+  "name": "Testimonial Slider",
+  "settings": [
+    {
+      "type": "text",
+      "id": "section_heading",
+      "label": "Section Heading",
+      "default": "What Our Users Say"
+    },
+    {
+      "type": "color",
+      "id": "highlight_color",
+      "label": "Highlight Color",
+      "default": "#ff6600"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "testimonial",
+      "name": "Testimonial",
+      "settings": [
+        {
+          "type": "text",
+          "id": "testimonial_text",
+          "label": "Testimonial Text",
+          "default": "Delivery is excellent and the prices seem reasonable. Thank you!"
+        },
+         {
+          "type": "text",
+          "id": "parag",
+          "label": "Testimonial Text",
+          "default": "Delivery is excellent and the prices seem reasonable. Thank you!"
+        },
+        
+        {
+          "type": "image_picker",
+          "id": "testimonial_image",
+          "label": "User Image"
+        },
+        {
+          "type": "text",
+          "id": "user_name",
+          "label": "User Name",
+          "default": "Jim"
+        },
+        {
+          "type": "text",
+          "id": "testimonial_date",
+          "label": "Date",
+          "default": "12/01/21"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Testimonial Slider",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}
+
+<div class="testimonial-slider">
+  <h2>{{ section.settings.section_heading }}</h2>
+  
+  <div class="slider-container">
+    {% for block in section.blocks %}
+      {% if block.type == 'testimonial' %}
+        <div class="testimonial-slide">
+          <p class="testimonial-text {% if forloop.index == 2 %}highlighted{% endif %}">{{ block.settings.testimonial_text }}</p>
+          <p class="para"> {{ block.settings.parag }}</p>
+          <div class="user-info">
+            {% if block.settings.testimonial_image %}
+              <img src="{{ block.settings.testimonial_image | img_url: '100x100' }}" alt="{{ block.settings.user_name }}" class="user-image">
+            {% endif %}
+            <p class="user-name">{{ block.settings.user_name }}</p>
+            <p class="testimonial-date">{{ block.settings.testimonial_date }}</p>
+          </div>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+  
+  <!-- Pagination dots -->
+  <div class="slider-pagination">
+    {% for block in section.blocks %}
+      <span class="dot {% if forloop.index == 2 %}active{% endif %}"></span>
+    {% endfor %}
+  </div>
+</div>
+
+<style>
+.testimonial-slider {
+  text-align: center;
+  padding: 20px;
+}
+
+.testimonial-slider h2 {
+  color: {{ section.settings.highlight_color }};
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+  
+.testimonial-slider h2 {
+    color: #ff6600;
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.slider-container {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  overflow: hidden;
+}
+
+.testimonial-slide {
+  width: 325px;
+ 
+}
+
+.testimonial-text.highlighted {
+  background-color: {{ section.settings.highlight_color }};
+  color: white;
+     padding: 80px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+ line-height: 1.6;
+  opacity: 1;
+}
+p.testimonial-text {
+    opacity: 0.2;
+}
+.user-info {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.user-image {
+  border-radius: 50%;
+}
+
+.user-name {
+  font-weight: bold;
+}
+
+.testimonial-date {
+  color: #888;
+}
+
+.slider-pagination {
+  margin-top: 10px;
+}
+
+.slider-pagination .dot {
+  height: 10px;
+  width: 10px;
+  margin: 0 3px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s;
+}
+
+.slider-pagination .dot.active {
+  background-color: {{ section.settings.highlight_color }};
+}
+
+@media (max-width: 768px) {
+  .slider-container {
+    display: block; 
+  }
+  
+  .testimonial-slide {
+    width: 100%;
+    opacity: 1;
+    margin-bottom: 20px; 
+  }
+ .slider-container {
+    flex-wrap: nowrap;
+  }
+  .testimonial-slide {
+    flex: 0 0 100%; /* Show one slide at a time on mobile */
+  }
+}  
+
+}
+
+</style>
+
+<script>
+// document.addEventListener('DOMContentLoaded', function () {
+//   const slides = document.querySelectorAll('.testimonial-text');
+//   const dots = document.querySelectorAll('.dot');
+//   let currentIndex = 0; // Start from the first testimonial
+//   const intervalTime = 3000; // Slide change interval in ms
+
+//   function showSlide(index) {
+//     slides.forEach((slide, i) => {
+//       slide.classList.toggle('highlighted', i === index);
+//       dots[i].classList.toggle('active', i === index);
+//     });
+//   }
+
+//   function autoplaySlider() {
+//     currentIndex = (currentIndex + 1) % slides.length;
+//     showSlide(currentIndex);
+//   }
+
+//   let autoplay = setInterval(autoplaySlider, intervalTime);
+
+//   dots.forEach((dot, i) => {
+//     dot.addEventListener('click', () => {
+//       currentIndex = i;
+//       showSlide(currentIndex);
+//       clearInterval(autoplay);
+//       autoplay = setInterval(autoplaySlider, intervalTime);
+//     });
+//   });
+
+//   showSlide(currentIndex);
+// });
+
+document.addEventListener('DOMContentLoaded', function () {
+
+  const desktopSlides = document.querySelectorAll('.testimonial-text');
+  const desktopDots = document.querySelectorAll('.dot');
+  let currentIndexDesktop = 0;
+  const intervalTime = 3000;
+  
+  function showDesktopSlide(index) {
+    desktopSlides.forEach((slide, i) => {
+      slide.classList.toggle('highlighted', i === index);
+      desktopDots[i].classList.toggle('active', i === index);
+    });
+  }
+  
+  function autoplayDesktopSlider() {
+    currentIndexDesktop = (currentIndexDesktop + 1) % desktopSlides.length;
+    showDesktopSlide(currentIndexDesktop);
+  }
+  
+  let autoplayDesktop = setInterval(autoplayDesktopSlider, intervalTime);
+  
+  desktopDots.forEach((dot, i) => {
+    dot.addEventListener('click', () => {
+      currentIndexDesktop = i;
+      showDesktopSlide(currentIndexDesktop);
+      clearInterval(autoplayDesktop);
+      autoplayDesktop = setInterval(autoplayDesktopSlider, intervalTime);
+    });
+  });
+
+  
+  const mobileSlides = document.querySelectorAll('.testimonial-slide');
+  const mobileDots = document.querySelectorAll('.dot');
+  let currentIndexMobile = 0;
+
+  function showMobileSlide(index) {
+    mobileSlides.forEach((slide, i) => {
+      slide.style.display = i === index ? 'block' : 'none';
+      mobileDots[i].classList.toggle('active', i === index);
+    });
+  }
+
+  function autoplayMobileSlider() {
+    currentIndexMobile = (currentIndexMobile + 1) % mobileSlides.length;
+    showMobileSlide(currentIndexMobile);
+  }
+
+  let autoplayMobile;
+
+  function startAutoplayIfMobile() {
+    if (window.innerWidth <= 768) {
+      autoplayMobile = setInterval(autoplayMobileSlider, intervalTime);
+    } else {
+      clearInterval(autoplayMobile); 
+    }
+  }
+
+  mobileDots.forEach((dot, i) => {
+    dot.addEventListener('click', () => {
+      currentIndexMobile = i;
+      showMobileSlide(currentIndexMobile);
+      clearInterval(autoplayMobile); 
+      autoplayMobile = setInterval(autoplayMobileSlider, intervalTime); 
+    });
+  });
+
+  // Check screen size on load and resize
+  function initSlider() {
+    if (window.innerWidth > 768) {
+    
+      showDesktopSlide(currentIndexDesktop);
+      document.querySelector('.desktop-slider').style.display = 'block';
+      document.querySelector('.mobile-slider').style.display = 'none';
+      clearInterval(autoplayMobile);  // Ensure mobile slider doesn't run
+    } else {
+   
+      showMobileSlide(currentIndexMobile);
+      document.querySelector('.desktop-slider').style.display = 'none';
+      document.querySelector('.mobile-slider').style.display = 'block';
+      startAutoplayIfMobile();
+    }
+  }
+
+  window.addEventListener('resize', initSlider);
+
+  
+  initSlider();
+});
+
+
+</script>
+

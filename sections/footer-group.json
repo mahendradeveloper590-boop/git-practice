@@ -1,0 +1,92 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "footer",
+  "name": "Footer group",
+  "sections": {
+    "offers_HiUyTt": {
+      "type": "offers",
+      "blocks": {
+        "offer_fhCRbm": {
+          "type": "offer",
+          "settings": {
+            "title": "Your text",
+            "content": "<p>Write a few words about your offers or your shop.</p>"
+          }
+        },
+        "offer_bRND8i": {
+          "type": "offer",
+          "settings": {
+            "title": "Your text",
+            "content": "<p>Write a few words about your offers or your shop.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "offer_fhCRbm",
+        "offer_bRND8i"
+      ],
+      "disabled": true,
+      "settings": {
+        "items_per_row": 2,
+        "stack_mobile": false
+      }
+    },
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "footer-0": {
+          "type": "text",
+          "settings": {
+            "title": "",
+            "footer-image": "shopify://shop_images/ASIhiresLogo_86b05660-966c-4a09-a70a-656575221c1f_225x150_1_1.png",
+            "content": "<p>We specialize in providing top-quality safety equipment to customers</p>"
+          }
+        },
+        "footer-1": {
+          "type": "links",
+          "settings": {
+            "menu": "quick-links-1"
+          }
+        },
+        "links_X4Eicp": {
+          "type": "links",
+          "settings": {
+            "menu": "polices"
+          }
+        },
+        "footer-2": {
+          "type": "newsletter",
+          "settings": {
+            "title": "Sign Up",
+            "subheading": "<p>Be the first to know about our best sales & Offer</p>"
+          }
+        }
+      },
+      "block_order": [
+        "footer-0",
+        "footer-1",
+        "links_X4Eicp",
+        "footer-2"
+      ],
+      "settings": {
+        "show_social_media": true,
+        "enable_follow_on_shop": true,
+        "show_payment_icons": true,
+        "show_locale_selector": true,
+        "show_country_selector": true
+      }
+    }
+  },
+  "order": [
+    "offers_HiUyTt",
+    "footer"
+  ]
+}

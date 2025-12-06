@@ -1,0 +1,208 @@
+<div class="slider-section">
+  <div class="image-slider-main-contaoiner page-width">
+    <div class="img-slider flex">
+      {% for block in section.blocks %}
+          {% if block.settings.slide-image != blank %}
+       
+          <div class="slider-containerr">
+          <img class="slider-item-image" src="{{ block.settings.slide-image | img_url:'master'}}" loading="lazy">
+            <div class="para-had">
+             <h4>{{ block.settings.heading }}</h4>
+               <p class="shiping">{{ block.settings.slide-heading }}</p>
+            </div>
+          </div>
+         
+       
+        {% endif %}
+      {% endfor %}
+        
+    </div>
+  </div>
+</div>
+
+<style>
+
+.img-slider {
+    display: flex;
+    margin-left: -15px;
+    margin-right: -15px;
+    flex-wrap: wrap;
+}
+  .slider-containerr {
+      display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+  .image-slider-main-contaoiner {
+    /* max-width: 1404px; */
+    margin: auto;
+}
+  .flex {
+    justify-content: space-around;
+}
+div#shopify-section-template--21620956266800__5df6160d-e98b-465b-9d46-582e960781f0 {
+    /* margin-top: 50px; */
+    padding-top: 22px;
+    padding-bottom: 30px;
+    /* background-color: #456d8a; */
+  overflow: hidden;
+}
+
+p.shiping {
+   margin-top: 16px;
+    line-height: 1.2;
+}
+img.slider-item-image h4 {
+    margin-bottom: 0!important;
+ 
+}
+.slider-containerr h4 {
+    margin-bottom: 0;
+}
+.slider-containerr h4 {
+    font-weight: 600;
+    margin-top: 0px;
+  padding-left: 10px;
+    text-align: start;
+      color: black;
+  font-size: 18px;
+}
+.para-had p {
+    margin-left: 10px;
+    margin-top: 1px;
+      color: #ffff;
+      text-align: start;
+}
+.para-had {
+    margin-top: 13px!important;
+}
+.slider-section {
+     margin-top: 20px;
+       background: #F26A12;
+  padding:30px;
+}
+
+
+
+  
+  @media screen and (max-width:767px) {
+
+.slider-containerr img {
+    width: 94%;
+}
+    .para-had p {
+    margin-left: -3px;
+    margin-top: 1px;
+}
+    .para-had {
+    margin-top: 6px!important;
+}
+.slider-containerr {
+      display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+p.shiping {
+    margin-top: 2px;
+    /* display: none; */
+}
+.slider-containerr h4 {
+    margin-bottom: 8px;
+    font-size: 13px;
+  margin-top: 11px;
+}
+.custom-slider-section {
+    margin-top: -10px;
+    padding-top: 60px;
+    /* padding-bottom: 60px; */
+    background-color: #e5e5e5!important;
+    margin-bottom: 25px;
+}
+.slider-containerr {
+   
+    flex-wrap: wrap;
+}
+.slider-containerr h4 {
+    font-weight: 600;
+    margin-top: 0px;
+   padding-left: 0px;
+  text-align: center;
+}
+container h4 {
+    font-weight: 600;
+    margin-top: 0px;
+    padding-left: 0px;
+    text-align: center;
+    font-size: 13px!important;
+}
+    .para-had p {
+    margin-left: 0px;
+    margin-top: 1px;
+      color: #ffff;
+      text-align: center;
+}
+ .slider-containerr {
+    width: 20%;
+    padding-left: 5px;
+    padding-right: 5px;
+   
+ 
+}
+    
+  }
+  
+</style>
+
+
+
+
+
+
+
+{% schema %}
+  {
+    "name": "custom-slider",
+    "settings": [],
+     "blocks": [
+    {
+      "type": "image-slide",
+      "name": "image-slide",
+      "settings": [
+        {
+          "type": "image_picker",
+          "label": "image",
+          "id": "slide-image"
+        },
+        {
+          "type":"text",
+          "id":"slide-heading",
+          "label":"image heading"
+        },
+         {
+          "type":"text",
+          "id":"heading",
+          "label":"image heading"
+        },
+        {
+          "type":"text",
+          "id":"slide-description",
+          "label":"image description"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "custom-suport",
+      "category": "Custom"   
+    }
+  ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
