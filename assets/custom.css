@@ -1,3 +1,6 @@
+.announcement-bar {
+    display: block !important;
+}
 .link:hover, .link:focus {
     color: #f26a12;
 }
