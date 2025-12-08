@@ -1,7 +1,3 @@
-.announcement-bar {
-    display: block !important;
-}
-/* css start */
 .link:hover, .link:focus {
     color: #f26a12;
 }
@@ -41,6 +37,7 @@ span.promo-block__cta.button.button--floating {
     color: #F26A12;
     font-weight: 600;
     margin-bottom: 30px;
+    border: 1px solod red!important;
 }
 .promo-block__content p {
     max-width: 265px;
