@@ -31,13 +31,13 @@ span.promo-block__cta.button.button--floating {
     position: relative;
 }
 .block-title h4 {
-    text-align: center;
+    text-align: start;
     font-size: 25px;
     text-transform: capitalize;
     color: #F26A12;
     font-weight: 600;
     margin-bottom: 30px;
-    border: 1px solid red!important;
+   
 }
 .promo-block__content p {
     max-width: 265px;
